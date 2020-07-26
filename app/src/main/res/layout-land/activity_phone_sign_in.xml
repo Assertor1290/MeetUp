@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/phone_back_image"
+    tools:context=".signin.PhoneSignIn">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextView"
+        android:textStyle="normal"
+        android:text="@string/may_i_ask_your_phone_number"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+    <EditText
+        android:id="@+id/editTextMobile"
+        style="@style/EditText"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
+        android:hint="@string/enter_your_mobile_number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:autofillHints="@string/enter_your_mobile_number" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        style="@style/Button"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:background="@drawable/button_background"
+        android:text="@string/submit"
+        android:textAllCaps="false" />
+</LinearLayout>

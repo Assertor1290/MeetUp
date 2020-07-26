@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    tools:context=".signin.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolBar">
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/sign_up"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            style="@style/LinearLayout"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                style="@style/NestedLinearLayout"
+                android:layout_height="420dp">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/EditText"
+                    android:autofillHints="@string/name"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    style="@style/EditText"
+                    android:autofillHints="@string/phone"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableStart="@drawable/ic_phone_black_24dp"
+                    android:hint="@string/phone"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/EditText"
+                    android:autofillHints="@string/email"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableStart="@drawable/ic_email_black_24dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress|phone" />
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/EditText"
+                    android:autofillHints="@string/password"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/NestedLinearLayout"
+                android:layout_marginTop="200dp">
+
+                <Button
+                    android:id="@+id/signup"
+                    style="@style/Button"
+                    android:layout_marginTop="80dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/button_background"
+                    android:text="@string/sign_up" />
+
+                <TextView
+                    android:id="@+id/signin"
+                    style="@style/ClickableTextView"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/already_have_an_account"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

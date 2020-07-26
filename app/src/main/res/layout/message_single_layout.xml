@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/single_chat"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FFFFFF"
+        android:src="@drawable/avatar"
+        />
+    <!--textview gets its formatting from drawable-->
+    <TextView
+        android:id="@+id/message_single_text"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/single_chat"
+        android:layout_alignBottom="@+id/single_chat"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/single_chat"
+        android:background="@drawable/message_text_background"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/text"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</RelativeLayout>

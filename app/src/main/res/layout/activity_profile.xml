@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:visibility="visible"
+        android:src="@drawable/avatar"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:id="@+id/textProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/display_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textProfileDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/description"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <!--this button will do three jobs send friend request,
+    accept friend request and unfriend-->
+    <Button
+        android:id="@+id/sendRequest"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/send_friend_request"
+        android:layout_marginTop="50dp"
+        android:background="#15AF10"
+        />
+
+    <Button
+        android:id="@+id/declineRequest"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/decline_friend_request"
+        android:layout_marginTop="10dp"
+        android:background="#F41818"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>
