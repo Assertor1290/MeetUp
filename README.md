@@ -21,8 +21,9 @@ Following are the screenshots of the app:-
 * git clone https://github.com/Assertor1290/MeetUp  
 * Create a Firebase project in the Firebase console, if you don't already have one  
 * Add a new Android app into your Firebase project with package name com.example.loginscreen  
-* Download the config file (google-services.json) from the new added app and move it into the module folder (i.e. app/)  
+* Download the config file (google-services.json) from the newly added app and move it into the module folder (i.e. app/)  
 * For news API get an API key from newsapi.org and place it in url.  
-* Build and run it on an Android device  
+* The notification function folder has index.json which contains function to send notification.(Watch TVAC tutorials to learn how to deploy the function to Firebase).   
+* Build and run it on an Android device.  
 
 
