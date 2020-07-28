@@ -71,27 +71,27 @@ public class SlideshowFragment extends Fragment {
                 switch (name) {
                     case "Music":
                         //music url
-                        urltemp = "https://newsapi.org/v2/everything?q=music&language=en&pageSize=100&apiKey=2072a77ffa554b22bce5949f2b734172";
+                        urltemp = "https://newsapi.org/v2/everything?q=music&language=en&pageSize=100&apiKey=""";
                         break;
                         //sports url
                     case "Sports":
-                        urltemp = "https://newsapi.org/v2/everything?q=sports&language=en&pageSize=100&apiKey=2072a77ffa554b22bce5949f2b734172";
+                        urltemp = "https://newsapi.org/v2/everything?q=sports&language=en&pageSize=100&apiKey=""";
                         break;
                         //games url
                     case "Games":
-                        urltemp = "https://newsapi.org/v2/everything?q=games&language=en&pageSize=100&apiKey=2072a77ffa554b22bce5949f2b734172";
+                        urltemp = "https://newsapi.org/v2/everything?q=games&language=en&pageSize=100&apiKey=""";
                         break;
                         //science url
                     case "Science":
-                        urltemp = "https://newsapi.org/v2/everything?q=science&language=en&pageSize=100&apiKey=2072a77ffa554b22bce5949f2b734172";
+                        urltemp = "https://newsapi.org/v2/everything?q=science&language=en&pageSize=100&apiKey=""";
                         break;
                         //book url
                     case "Books":
-                        urltemp = "https://newsapi.org/v2/everything?q=books&language=en&pageSize=100&apiKey=2072a77ffa554b22bce5949f2b734172";
+                        urltemp = "https://newsapi.org/v2/everything?q=books&language=en&pageSize=100&apiKey=""";
                         break;
                         //films
                     case "Films":
-                        urltemp = "https://newsapi.org/v2/everything?q=films&language=en&pageSize=100&apiKey=2072a77ffa554b22bce5949f2b734172";
+                        urltemp = "https://newsapi.org/v2/everything?q=films&language=en&pageSize=100&apiKey=""";
                         break;
                 }
                 Log.d(TAG, "onData: "+urltemp);
